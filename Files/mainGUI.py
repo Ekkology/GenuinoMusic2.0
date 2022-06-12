@@ -18,11 +18,11 @@ model = load_model()
 #Propiedades de la Ventana
   
 window.title("GenuinoMusic")
-window.geometry('1280x720+0+0')
+window.geometry('1920x1080+0+0')
 window.iconbitmap("Files\clef.ico")
 #window.maxsize(width=1280,height=720)
 
-frame1 = tk.Frame(window, bg='#a23eb9')
+frame1 = tk.Frame(window, bg='#e01656')
 
 frame1.pack(fill='both', expand='yes')
 #-------------------------#
@@ -37,8 +37,8 @@ frame2.place(relx=0.017, rely=0.022, relheight=0.95, relwidth=0.96)
 
 #Widgets
 imgenFondo =  PhotoImage(file = r'Files\Mixing-consoles-headphones-colors-music-theme_1920x1080.gif')
-lebelFondo = Label(window,image=imgenFondo).place(x=0,y=0)
-img = ImageTk.PhotoImage(file=r'Files\logo_utp_1_72 (1).png')
+lebelFondo = Label(frame2,image=imgenFondo).place(x=0,y=0)
+img = ImageTk.PhotoImage(file=r'Files\UTP400pixeles.png')
 imagenutp = tk.Label(frame2, image=img)
 imagenutp.place(x = 590, y = 5)
 
@@ -46,16 +46,16 @@ lbl0 = tk.Label(frame1, text="Bienvenido",
                 bg=bgframe,
                 fg='Black',
                 font=("Century Gothic",40))
-lbl0.place(x=640,y=150)
+lbl0.place(x=670,y=450)
 
 lbl1 = tk.Label(frame1, text="uwu",
                 bg=bgframe,
                 fg='Black',
                 font=("Helvetica",8))
-lbl1.place(x=640,y=365)
+lbl1.place(x=805,y=700)
 
 progressbar = ttk.Progressbar(frame1)
-progressbar.place(x=640, y=240, width=200)    
+progressbar.place(x=710, y=540, width=200)    
 def choose_file():
     filename = askopenfilename()
     return filename
@@ -137,7 +137,7 @@ btn0 = tk.Button(frame1, text="Identificar Género Canción",
                  fg='gray11',
                  font=("Helvetica",10),
                  command= identificar_genero)
-btn0.place(x=640,y=280)
+btn0.place(x=730,y=610)
 
 def click_credits():         
     tk.messagebox.showinfo("Créditos","\nInspirado en : -Diego Fernando Medina Blanco\n \t     -Henry Iván Peña Contreras \n \t     -William Giovanny Palomino \n\n")
@@ -148,7 +148,7 @@ btn1 = tk.Button(frame1, text="Créditos",
                  fg='gray11',
                  font=("Helvetica",10),
                  command=click_credits)
-btn1.place(x=640,y=330)
+btn1.place(x=785,y=650)
 
 
 window.mainloop()
