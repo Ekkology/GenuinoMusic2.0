@@ -1,7 +1,11 @@
 # GenuinoMusic2.0
 
-Prueba de Suibida
+Su funcionamiento es sencillo, selecciona una **canción** de su base de datos e identifica su **género**
 
-Hoalaaaaaaa mundoooooooo
+utiliza las **librerías** de **keras ** y  **tensorFlow ** para el manejo de las neuronas, y su entrenamiento
 
-me gusta el color  purpura
+estudia el **espectrograma** del audio(FIGURA 1.0)
+
+![1655046028411](image/README/1655046028411.png)
+
+figura 1.0
