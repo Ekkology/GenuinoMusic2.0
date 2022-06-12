@@ -2,7 +2,7 @@
 
 Su funcionamiento es sencillo, selecciona una **canción** de su base de datos e identifica su **género**
 
-utiliza las **librerías** de **keras ** y  **tensorFlow ** para el manejo de las neuronas, y su entrenamiento
+utiliza las **librerías** de **keras** y  **tensorFlow** para el manejo de las neuronas, y su entrenamiento
 
 estudia el **espectrograma** del audio(FIGURA 1.0)
 
