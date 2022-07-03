@@ -63,7 +63,7 @@ def process_input(audio_file, track_duration):
 window.title("GenuinoMusic")
 window.geometry('400x400')
 #window.iconbitmap("Files\clef.ico")
-#window.maxsize(width=1280,height=720)
+window.maxsize(width=400,height=400)
 
 frame1 = tk.Frame(window, bg='#e01656')
 
@@ -79,26 +79,29 @@ frame2 = tk.Frame(frame1, bg=bgframe)
 frame2.place(relx=0.017, rely=0.022, relheight=0.95, relwidth=0.96)
 
 #Widgets
-imgenFondo =  PhotoImage(file = "Files\Mixing-consoles-headphones-colors-music-theme_1920x1080.gif")
+imgenFondo =  PhotoImage(file = "Files\Mixing400x400.gif")
 lebelFondo = Label(frame2,image=imgenFondo).place(x=0,y=0)
-img = ImageTk.PhotoImage(file="Files\logo_utp_1_72 (1).png")
+imgen_Fisc =  ImageTk.PhotoImage(file="Files\FISC_utp 100x100.png")
+imagen_FiscTK = tk.Label(frame2, image=imgen_Fisc)
+imagen_FiscTK.place(x = 250, y = 10)
+img = ImageTk.PhotoImage(file="Files/utp100x99.png")
 imagenutp = tk.Label(frame2, image=img)
-imagenutp.place(x = 590, y = 5)
+imagenutp.place(x = 53, y = 10)
 
 lbl0 = tk.Label(frame1, text="Bienvenido",
                 bg=bgframe,
                 fg='Black',
                 font=("Century Gothic",40))
-lbl0.place(x=670,y=450)
+lbl0.place(x=58,y=150)
 
-lbl1 = tk.Label(frame1, text="uwu",
+lbl1 = tk.Label(frame1, text="UTP © 2022",
                 bg=bgframe,
                 fg='Black',
                 font=("Helvetica",8))
-lbl1.place(x=805,y=700)
+lbl1.place(x=161,y=365)
 
 progressbar = ttk.Progressbar(frame1)
-progressbar.place(x=710, y=540, width=200)    
+progressbar.place(x=95, y=240, width=200)   
 
     
 def identificar_genero():
@@ -134,10 +137,10 @@ btn0 = tk.Button(frame1, text="Identificar Género Canción",
                  fg='gray11',
                  font=("Helvetica",10),
                  command= identificar_genero)
-btn0.place(x=730,y=610)
+btn0.place(x=113,y=280)
 
 def click_credits():         
-    tk.messagebox.showinfo("Créditos","\nInspirado en : -Diego Fernando Medina Blanco\n \t     -Henry Iván Peña Contreras \n \t     -William Giovanny Palomino \n\n")
+    tk.messagebox.showinfo("Créditos","\n\tOrlando De Jesús Montenegro Samudio\n \tMichelle Ariadne Justavino Víquez \n \tSebastián NULL  Pimentel Sánchez \n\n")
     
     
 btn1 = tk.Button(frame1, text="Créditos",
@@ -145,7 +148,7 @@ btn1 = tk.Button(frame1, text="Créditos",
                  fg='gray11',
                  font=("Helvetica",10),
                  command=click_credits)
-btn1.place(x=785,y=650)
+btn1.place(x=161,y=330)
 
 
 window.mainloop()
