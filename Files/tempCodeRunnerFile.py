@@ -1,0 +1,1 @@
+s[prediction[0]]
